@@ -128,6 +128,6 @@ if module == '2':
     )
 
     response = requests.get('https://api.dehashed.com/search', headers=headers, params=params,
-                            auth=('evxnw@protonmail.com', '8e5ccac816ec60d067cf38e510793a3d')).json()
+                            auth=('email@email.com', 'api_key')).json()
     print(response)
     print(f"Succesfully queried dehashed API in {response['took']}. Total entries found: {response['total']}")
